@@ -31,7 +31,39 @@ OBSERVATIONS:
 
 REGULATION CHARACTERISTICS:
 
-V-I & REGULATION CHARACTERISTICS:
+
+
+##  Zener Diode – Regulation Characteristics & Voltage Regulator
+
+### 1. **Zener Diode Basics**
+- Special diode designed to work in **reverse bias**.
+- Has a defined **Zener breakdown voltage (Vz)**.
+- Maintains constant voltage across it after breakdown.
+
+
+### 2. V-I Characteristics
+- **Forward Bias**: Acts like normal diode (conducts above ~0.7V).
+- **Reverse Bias**:
+  - No current until breakdown voltage.
+  - After breakdown, voltage stays nearly constant at Vz.
+
+
+### 3. Zener as Voltage Regulator
+- **Circuit**: Zener in reverse bias + series resistor.
+- **Function**:
+  - Input voltage > Vz → Zener conducts, clamps output to Vz.
+  - Input voltage < Vz → Zener doesn’t conduct, output follows input.
+
+
+### 4. Advantages
+- Simple and low-cost.
+- Good for low-power regulation.
+- Protects circuits from overvoltage.
+
+
+### 5. Limitations
+- Not suitable for high current loads.
+- Efficiency drops with high power dissipation.
 
 PRECAUTIONS:
 
@@ -39,5 +71,10 @@ PRECAUTIONS:
 2. Connect voltmeter and Ammeter in correct polarities as shown in the circuit diagram.
 
 3. Do not switch ON the power supply unless you have checked the circuit connections as per the circuit diagram.
+
+## Diagram:
+<img width="1154" height="574" alt="Screenshot 2025-10-28 084347" src="https://github.com/user-attachments/assets/7099c94c-05fa-4cfa-8a28-244745c30142" />
+<img width="1152" height="646" alt="Screenshot 2025-10-28 084641" src="https://github.com/user-attachments/assets/acd97e74-3651-49f8-bcb8-38e97fbab4f7" />
+
 RESULT:
 The Characteristics of Zener Break Diode Voltage Regulation from the Characteristics are Observed.
